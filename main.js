@@ -33,7 +33,7 @@ let orders = {}
 // Basic configuration
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
-app.listen(8080)
+app.listen(process.env.PORT || 8080)
 
 // Business logic
 const map_to_array = (map) => {
